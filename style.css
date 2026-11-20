@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "a a"
+    "b c"
+    "d d"
+    "e e"
+    "f f";
+  gap: 24px;
+}
+
+.box {
+  background-color: white;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  border-radius: 8px;
+}
+
+.blue {
+  background-color: #755cde;
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 12px;
+}
+
+.yellow {
+  background-color: #ec9b56;
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 12px;
+}
+
+.red {
+  background-color: #f39e9e;
+  grid-area: e;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 12px;
+}
+
+.cyan {
+  background-color: #61c4b7;
+  grid-area: d;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 12px;
+}
+
+.pink {
+  background-color: #e16b5b;
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 12px;
+}
+
+.purple {
+  background-color: #552049;
+  grid-area: f;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 12px;
+}
+
+svg {
+  align-self: end;
+}
+
+@media screen and (width > 380px) {
+  .grid {
+    grid-template-areas:
+      "a a b c"
+      "a a d d"
+      "e e f f";
+  }
+}
+
+@media screen and (width > 768px) {
+  .grid {
+    grid-template-areas:
+      "a a b c d d"
+      "a a e e f f";
+  }
+}
